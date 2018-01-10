@@ -12,7 +12,7 @@ If necessary, you can add your own stuff in the reset handler prior to calling `
 
 To launch a simulation in debug mode, run in one terminal:
 ```
-./nucleo-f401re.sh -gdb-server 1234 -nographic -components.flash.file-blob ../softs/bare_tests/test.bin
+./nucleo-f401re.sh -debug -gdb-server 1234 -nographic -components.flash-native.file-blob PATH_OF_CODE/test.bin -components.flash-boot.file-blob PATH_OF_CODE/test.bin
 ```
 and in an other terminal:
 ```
